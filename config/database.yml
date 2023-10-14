@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: db
+  username: postgres
+  password: password
+
+development:
+  <<: *default
+  database: mercury_development
+
+test:
+  <<: *default
+  database: mercury_test
+
+production:
+  <<: *default
+  database: mercury_production
