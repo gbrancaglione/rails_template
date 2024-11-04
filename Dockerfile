@@ -1,5 +1,5 @@
 # Use an official Ruby runtime as a parent image
-FROM ruby:3.0.2
+FROM ruby:3.3.5
 
 ENV RAILS_ENV=development
 ENV RACK_ENV=development
